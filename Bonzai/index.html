@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="heading">Bokningssida<!--Block-->
+        <br>   
+        </br>
+    </header>
+    <section class="logobackground">
+        <img src="assets/logo/bonz.ai-logo-color-portrait.png" class="logo" />
+    </section>
+
+<div class="navigation">
+<nav>
+    <img src="assets/logo/navigationcon.png" class="navi-icon" onclick="toggleMenu()">  
+    
+    <div class="sub-menu-wrap" id="subMenu">
+        <div class="sub-menu">
+            <a href="hem.html" class="sub-menu-link"> 
+                <p>Hem</p>
+            <span>></span>
+       </a>
+       <a href="index.html" class="sub-menu-link"> 
+        <p>Bokningssida</p>
+    <span>></span>
+       </a>
+<a href="kontakt.html" class="sub-menu-link"> 
+    <p>Kontakt</p>
+<span>></span>
+</a>
+            </div>
+        </div>
+        
+
+
+    <div class="Country">
+    <form action="#">
+        <label for="lang" >Country</label>
+        <select name="Country" id="lang">
+          <option value="Sweden">Sweden</option>
+          <option value="Norway">Norway</option>
+          <option value="Denmark">Denmark</option>
+        </select>
+  </form>
+</div>
+<div class="Rum">
+  <form action="#">
+    <label for="lang">Rum</label>
+    <select name="Rum" id="lang">
+      <option value="1rum">1rum</option>
+      <option value="2rum">2rum</option>
+      <option value="3rum">3rum</option>
+      <option value="4rum">4rum</option>
+    </select>
+</form>
+</div>
+
+<div class="checkindate">
+    <label for=" date" style="font-size: medium;">Check in date</label>
+    <input type="date" style="font-size: 18px;" name="date" id="date">
+    </div>
+
+<div class="checkoutdate">
+    <label for=" date" style="font-size: medium;">Check out date</label>
+    <input type="date" style="font-size: 18px;" name="date" id="date">
+    
+   
+    </div>
+    <div>
+        <input type="submit" value="Se rum & pricer"/>
+    </div>
+    
+</div>
+
+</nav>
+
+
+<main class="content">
+    <article class="rum">
+        <img src="assets/photos/01-day.jpg" width="400" height="200" alt="doubleroom"/>
+        <h1>Doublerum</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempore voluptatibus, ea iste deserunt fugiat obcaecati. 
+            Consequatur laudantium perferendis sapiente, 
+            maxime esse beatae modi nobis fugiat optio illum laboriosam doloribus ipsa. </p>
+        <p> 1200:- </p>
+    <button>Booka</button>
+    </article>
+    <article class="rum">
+        <img src="assets/photos/01-day.jpg" width="400" height="200" alt="twinroom" />
+        <h2>Twinrum</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempore voluptatibus, ea iste deserunt fugiat obcaecati. 
+            Consequatur laudantium perferendis sapiente, 
+            maxime esse beatae modi nobis fugiat optio illum laboriosam doloribus ipsa.</p>
+        
+            <p> 1200:- </p>    
+            <button>Booka</button>
+    </article>
+    <article class="rum">
+        <img src="assets/photos/01-day.jpg" width="400" height="200" alt="singleroom"  />
+        <h3>Singlerum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Tempore voluptatibus, ea iste deserunt fugiat obcaecati. 
+            Consequatur laudantium perferendis sapiente, 
+            maxime esse beatae modi nobis fugiat optio illum laboriosam doloribus ipsa.</p>
+            <p> 1200:- </p>    <button>Booka</button>
+    </article>
+</main>
+
+<footer class="footer"> 
+    <article class="nav">
+        <h2 class="nav_heading">Om Hotels</h2>
+        <a class="nav_link" href="#">Om Bonz</a>
+        <a class="nav_link" href="#">Kundservice</a>
+        <a class="nav_link" href="#">Jobba hos oss</a>
+    </article>
+
+    <article class="address">
+        <h2>Address</h2>
+        <p>Plinkeplonkvägen 32</p>
+        <p>888 81 Klonkberga</p>
+    </article>
+
+    <article class="social-media">
+        <h2>Social media</h2>
+        <figure>
+            <img src="assets/logo/logo-facebook.svg" alt="facebook" />
+            <img src="assets/logo/logo-instagram.svg" alt="instagram" />
+            <img src="assets/logo/logo-twitter.svg" alt="twitter" />
+        </figure>
+    </article>
+
+</footer>
+<script>
+    let subMenu=document.getElementById("subMenu");
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+</body>
+</html>
